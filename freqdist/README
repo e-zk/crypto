@@ -1,0 +1,25 @@
+freqdist
+========
+
+rudimentary character frequency distribution calculator.
+counts the occurrences of characters in a given ciphertext.
+
+warn: will count newlines too if text contains any; use `echo -n` or `printf`.
+
+example usage:
+--------------
+for nicer output use `sort` + `column`
+
+
+	$ printf "SOME CIPHER TEXT" | ./freqdist | sort | column
+	  : 2   C : 1   F : 0   I : 1   L : 0   O : 1   R : 1   U : 0   X : 1
+	A : 0   D : 0   G : 0   J : 0   M : 1   P : 1   S : 1   V : 0   Y : 0
+	B : 0   E : 3   H : 1   K : 0   N : 0   Q : 0   T : 2   W : 0   Z : 0
+
+	$ printf "OMS CEPHIR EEXTT" | ./freqdist | sort | column
+	  : 2   C : 1   F : 0   I : 1   L : 0   O : 1   R : 1   U : 0   X : 1
+	A : 0   D : 0   G : 0   J : 0   M : 1   P : 1   S : 1   V : 0   Y : 0
+	B : 0   E : 3   H : 1   K : 0   N : 0   Q : 0   T : 2   W : 0   Z : 0
+
+
+results here are the same because *wink* *wink*

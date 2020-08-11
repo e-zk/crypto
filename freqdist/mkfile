@@ -1,0 +1,13 @@
+PROG=freqdist
+
+default:QV:
+	# it's probably not wise to do it this way idk
+	mk clean
+	mk $PROG
+
+clean:V:
+	rm -f $PROG
+
+$PROG:
+	go build -o $PROG main.go
+
