@@ -8,6 +8,7 @@ import (
 	"os"
 )
 
+/*
 var alphabet = []rune{'A', 'B',
 	'C', 'D',
 	'E', 'F',
@@ -21,6 +22,20 @@ var alphabet = []rune{'A', 'B',
 	'U', 'V',
 	'W', 'X',
 	'Y', 'Z', ' '}
+*/
+var alphabet = []rune{'A', 'a', 'B', 'b',
+	'C', 'c', 'D', 'd',
+	'E', 'e', 'F', 'f',
+	'G', 'g', 'H', 'h',
+	'I', 'i', 'J', 'j',
+	'K', 'k', 'L', 'l',
+	'M', 'm', 'N', 'n',
+	'O', 'o', 'P', 'p',
+	'Q', 'q', 'R', 'r',
+	'S', 's', 'T', 't',
+	'U', 'u', 'V', 'v',
+	'W', 'w', 'X', 'x',
+	'Y', 'y', 'Z', 'z', ' '}
 
 func main() {
 	table := make(map[rune]int)
@@ -44,6 +59,9 @@ func main() {
 
 	// unsorted
 	for r, t := range table {
-		fmt.Printf("%s : %d\n", string(r), t)
+		// exclude 0
+		if t != 0 {
+			fmt.Printf("%s : %d\n", string(r), t)
+		}
 	}
 }
