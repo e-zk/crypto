@@ -18,7 +18,7 @@ func main() {
         str := "(inf)"
         points := 1
 
-        fmt.Printf("E: y^2 = x^3 + %dx + %d (mod %d)\n", a, b, p)
+        fmt.Printf("\nE: y^2 = x^3 + %dx + %d (mod %d)\n\n", a, b, p)
         for y := p - 1; y >= 0; y-- {
                 x := -1
                 for x = 0; x < p; x++ {
@@ -33,5 +33,5 @@ func main() {
                 }
                 fmt.Printf("%d\n", y)
         }
-        fmt.Printf("E= %s\n|E|= %d\n", str, points)
+        fmt.Printf("\nE= %s\n|E|= %d\n\n", str, points)
 }
