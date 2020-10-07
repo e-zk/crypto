@@ -1,8 +1,11 @@
 Elliptic curve (EC) drawing program
 
 usage (these are the default args):
+
     $ ./bin -p=11 -a=-2 -b=0
+    
     E: y^2 = x^3 + -2x + 0 (mod 11)
+    
     . . . . @ . . . @ . @ 10
     . . @ . . . . . . . . 9
     . . . . . . . . . . . 8
@@ -14,8 +17,10 @@ usage (these are the default args):
     . . @ . . . . . . . . 2
     . . . . @ . . . @ . @ 1
     @ . . . . . . . . . . 0
+    
     E= (0, 0) (10, 1) (8, 1) (4, 1) (2, 2) (5, 4) (5, 7) (2, 9) (10, 10) (8, 10) (4, 10) (inf)
     |E|= 12
     
 for more (not very helpful) help:
+
     $ ./bin -h
