@@ -1,5 +1,5 @@
 Elliptic curve (EC) drawing program
-
+===================================
 usage (these are the default args):
 
     $ ./bin -p=11 -a=-2 -b=0
@@ -24,3 +24,7 @@ usage (these are the default args):
 for more (not very helpful) help:
 
     $ ./bin -h
+    
+todo
+----
+* fix bug where stuff doesn't show on the proper x-coordinate
