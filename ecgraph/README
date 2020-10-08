@@ -24,6 +24,16 @@ usage (these are the default args):
 for more (not very helpful) help:
 
     $ ./bin -h
+    Usage of ./bin:
+        -a int
+            'a' value (default -2)
+        -b int
+            'b' value
+        -csv
+            output points as CSV at the end
+        -p int
+            modulus (default 11)
+    exit status 2
     
 todo
 ----
